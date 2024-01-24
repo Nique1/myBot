@@ -3,6 +3,8 @@ package com.example.myBot.controllers;
 import com.example.myBot.dto.BotRequest;
 import com.example.myBot.dto.BotResponse;
 import com.example.myBot.dto.Message;
+import com.example.myBot.services.AnswerService;
+import com.example.myBot.services.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -25,6 +27,11 @@ public class BotController {
 
     @Autowired
     private RestTemplate restTemplate;
+    @Autowired
+    private QuestionService questionService;
+
+    @Autowired
+    private AnswerService answerService;
 
 @GetMapping("/chat")
     public ResponseEntity<String> chat(@RequestParam("prompt") String prompt) {
@@ -35,6 +42,9 @@ public class BotController {
             Message message = botResponse.getChoices().get(0).getMessage();
 
             if(message != null){
+                questionService.saveQuestion(prompt);
+                answerService.saveAnswer(message.getContent());
+
                 return ResponseEntity.ok(message.getContent());
             }
         }
