@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,7 +16,7 @@ public class BotResponse {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    private class Choice {
+    public static class Choice {
         private int index;
         private Message message;
     }
