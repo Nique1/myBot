@@ -1,16 +1,16 @@
 # myBot
-This Spring Boot application connects with OpenAI API, generates question and receives answer via REST operations. 
-Application is connected to mySQL database. It created proper tables and saves generated questions and answers into them.
+This Spring Boot application connects with OpenAI API, generates questions, and receives answers via REST operations. 
+The application is connected to the MySQL database. It creates proper tables and saves generated questions and answers into them.
 
-The main goal of this app was to establish connection with OpenAI ChatBot, generate question and receive answer which are saved into mySQL database.
+The main goal of this app was to establish a connection with OpenAI ChatBot, generate questions, and receive answers, which are saved into the MySQL database.
 
 
 ## First things first
-To run this application on your machine, you must provide credentials in application.properties file, listed below:
+To run this application on your machine, you must provide credentials in the application.properties file, listed below:
 - OpenAI API key
-- OpenAI API url
-- OpenAI chatBot model
-- mySQL user configuration
+- OpenAI API URL
+- OpenAI chatbot model
+- MySQL user configuration
 
 ## Demo 
 
@@ -27,4 +27,4 @@ An answer table is created and a prompt is inserted from the user.
 
 ![image](https://github.com/Nique1/myBot/assets/84642454/b4d9f7f6-dc3d-41fb-a824-7cb00814a4ed)
 
-### TechStack: Java 17, SpringBoot, JUnit 5, Mockito, mySQL, Postman 
+### TechStack: Java 17, Spring Boot, JUnit 5, Mockito, MySQL, Postman 
