@@ -35,6 +35,7 @@ public class BotController {
 
 @GetMapping("/chat")
     public ResponseEntity<String> chat(@RequestParam("prompt") String prompt) {
+
         BotRequest botRequest = new BotRequest(model, prompt);
         BotResponse botResponse = restTemplate.postForObject(url, botRequest, BotResponse.class);
 

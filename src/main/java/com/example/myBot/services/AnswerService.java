@@ -13,8 +13,8 @@ public class AnswerService {
     private AnswerRepository answerRepository;
 
     public void saveAnswer(String createdAnswer) {
-        Answer answer = new Answer();
 
+        Answer answer = new Answer();
         answer.setAnswer(createdAnswer);
 
         answerRepository.save(answer);
