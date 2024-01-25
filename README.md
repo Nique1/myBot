@@ -5,20 +5,20 @@ Application is connected to mySQL database. It created proper tables and saves g
 The main goal of this app was to establish connection with OpenAI ChatBot, generate question and receive answer which are saved into mySQL database.
 
 
-### First things first
+## First things first
 To run this application on your machine, you must provide credentials in application.properties file, listed below:
 - OpenAI API key
 - OpenAI API url
 - OpenAI chatBot model
 - mySQL user configuration
 
-### Demo 
+## Demo 
 
-## GET Method
+### GET Method
 
 ![image](https://github.com/Nique1/myBot/assets/84642454/ae05d156-1b3b-4a0f-883b-d55d11b8017f)
 
-## Database 
+### Database 
 A question table is created and a prompt from the user is inserted.
 
 ![image](https://github.com/Nique1/myBot/assets/84642454/204037e1-825d-4dc9-a152-57f26d7dda03)
@@ -27,4 +27,4 @@ An answer table is created and a prompt is inserted from the user.
 
 ![image](https://github.com/Nique1/myBot/assets/84642454/b4d9f7f6-dc3d-41fb-a824-7cb00814a4ed)
 
-# TechStack: Java 17, SpringBoot, JUnit 5, Mockito, mySQL, Postman 
+### TechStack: Java 17, SpringBoot, JUnit 5, Mockito, mySQL, Postman 
