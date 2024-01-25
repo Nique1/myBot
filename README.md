@@ -2,7 +2,7 @@
 This Spring Boot application connects with OpenAI API, generates questions, and receives answers via REST operations. 
 The application is connected to the MySQL database. It creates proper tables and saves generated questions and answers into them.
 
-The main goal of this app was to establish a connection with OpenAI ChatBot, generate questions, and receive answers, which are saved into the MySQL database.
+The main goal of this app was to establish a connection with OpenAI ChatBot, generate questions, and receive answers which were saved into the MySQL database.
 
 
 ## First things first
