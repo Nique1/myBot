@@ -16,7 +16,7 @@ To run this application on your machine, you must provide credentials in the app
 
 ### GET Method
 
-![image](https://github.com/Nique1/myBot/assets/84642454/ae05d156-1b3b-4a0f-883b-d55d11b8017f)
+![image](https://github.com/Nique1/myBot/assets/84642454/f8111519-3a05-4413-9929-96b59c113b6c)
 
 ### Database 
 A question table is created and a prompt from the user is inserted.
