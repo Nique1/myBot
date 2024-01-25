@@ -27,6 +27,7 @@ public class BotController {
 
     @Autowired
     private RestTemplate restTemplate;
+
     @Autowired
     private QuestionService questionService;
 
